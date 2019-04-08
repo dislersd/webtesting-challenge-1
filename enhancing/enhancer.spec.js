@@ -1,10 +1,29 @@
 const enhancer = require("./enhancer");
-const { repair } = require("./enhancer.js");
 
-describe("repair enhancer", () => {
-  const spear = {};
-  repair(spear);
-  it("return item durabilty at 100", () => {
-    expect(spear.durability).toBe(100);
+describe("actions", () => {
+  //
+  describe("repair", () => {
+    //
+    it("return item durabilty at 100", () => {
+      expect(enhancer.repair(
+      {
+        name: 'spear',
+        enhancement: 0,
+        durability: 0
+      }
+      )).toEqual(
+      {
+        name: 'spear',
+        enhancement: 0,
+        durability: 100
+      }
+      );
+
+    });
   });
+  // describe("succeed", () => {
+  //   succeed(spear);
+  //   const num = spear.enhancement;
+  //   expect(spear.enhancement).toBe(num)
+  // })
 });
