@@ -13,9 +13,20 @@ function fail(item) {
   return { ...item };
 }
 
-function repair(item) {
-  return { ...item };
+class Item {
+  constructor(props) {
+    this.durability = props.durability;
+  }
 }
+
+
+function repair(item) {
+  item.durability = 100
+  console.log(item);
+  return { item };
+}
+
+
 
 function get(item) {
   return { ...item };
