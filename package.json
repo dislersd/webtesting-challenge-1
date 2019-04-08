@@ -1,0 +1,14 @@
+{
+  "name": "webtesting-challenge-1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watch --verbose"
+  },
+  "repository": "https://github.com/dislersd/webtesting-challenge-1.git",
+  "author": "dislersd <dislersd@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^24.7.1"
+  }
+}
